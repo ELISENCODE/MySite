@@ -11,7 +11,7 @@ h1 {
     font-size: 5.625rem;
     /* rem(root em is that it does not get affected by upstream size changes) */
     /* 16px = 100% = 1em; -> 90px/16px=562.5%=5.625em */
-    line-height: 2;
+    /* line-height: 2; */
     margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
 }
@@ -35,27 +35,53 @@ h3 {
 */
 .top-container {
     /* background-image: url(https://); */
-    background-color: #effffb;
+    /* background-color: #effffb; */
     position: relative;
-    padding-top: 100px;
+    padding-top: 200px;
+    background-color: red;
 }
 
 .middle-container {
-    padding: 4rem 0 0 0;
+    padding: 9.5rem 0 0 0;
 }
 
-.bottom-container {}
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+    display: block;
+}
 
 .top-cloud {
+    width: 9rem;
+    height: 8rem;
     position: absolute;
     right: 300px;
-    top: 50px;
+    top: 95px;
+    filter: drop-shadow(8px 8px 10px gray);
 }
 
-.bottom-cloud {
+.bottom-cloud-rainbow {
+    width: 65rem;
     position: absolute;
-    left: 300px;
+    left: 18rem;
+    top: 100px;
     bottom: 300px;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.growth {
+    width: 40%;
+    position: absolute;
+    left: 27rem;
+    bottom: -150px;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
 .pro {
@@ -66,12 +92,15 @@ h3 {
     height: 150px;
     width: 150px;
     border-radius: 100px;
+    filter: drop-shadow(8px 8px 10px gray);
 }
 
 .codeImg {
-    height: 150px;
-    width: 150px;
     border-radius: 100px;
+    width: 25%;
+    height: 180px;
+    float: left;
+    margin-right: 30px;
 }
 
 .LearningGIF {
@@ -89,4 +118,71 @@ h3 {
     margin: 100px auto 100px auto;
     text-align: left;
     line-height: 2;
+}
+
+.LearningGIF {
+    width: 25%;
+    height: 180px;
+    float: right;
+    margin-left: 30px;
+}
+
+/* .code-skill-description {
+    clear: left;
+} */
+
+/* .education-challenge-description {
+    clear: right;
+} */
+
+.intro {
+    width: 30%;
+    margin:auto;
+    line-height: 2;
+}
+
+.contact-me {
+    width: 40%;
+    margin: 40px auto 60px;
+    line-height: 2;
+}
+
+.btn {
+    width: 26%;
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #EAF6F6;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(30, 30, 30, 0.8);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 8px;
+    background: #11cdd4;
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-box-shadow: 0 2px 1px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0 2px 1px rgba(50, 50, 50, 0.75);
+    box-shadow:         0 2px 1px rgba(50, 50, 50, 0.75);
+}
+
+a {
+    margin: 10px 20px;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+.footer-link {
+    text-decoration: none;
 }
